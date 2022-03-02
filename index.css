@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+body {
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content:left; */
+    background-color:#00AFB9;
+    position: absolute; 
+  
+    
+}
+header{
+        top:0px;;
+        position: fixed;
+        background-color:#0081A7 ;
+        width:95rem; 
+        box-shadow: 1rem 1rem #F07167;       
+    }
+h1{
+    text-align: center ;
+    font-size: 5rem;
+    margin: auto;
+    color: #FDFCDC;
+    font-family: 'Indie Flower', cursive;
+   
+}
+
+.board {
+    display: flex;
+    height: 360px;
+    width: 360px;
+    flex-wrap: wrap;
+    margin-top: -18rem;
+    margin-left: 35rem;
+    box-shadow: 1rem 1rem  #FED9B7;
+    background-color: #0081A7;
+    padding-left: 2rem;
+
+   
+}
+.cell {
+    display: flex;
+    flex-basis: 100px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.board >.cell:nth-child(3n+2) {
+    border-right: .5vw solid #F07167;
+    border-left: .5vw solid #F07167;
+
+}
+
+.board >.cell:nth-child(n+4):nth-child(-n+6) {
+    border-top: .5vw solid #F07167;
+    border-bottom: .5vw solid#F07167;
+}
+
+.players {
+    display: flex;
+    outline: solid  #0081A7;
+    flex-direction: column;
+    width: 13rem;
+    background-color: #FED9B7;
+    padding-left: 2rem;
+    margin-top: 20rem;
+    margin-left: 5rem;
+}
