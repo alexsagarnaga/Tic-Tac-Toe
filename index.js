@@ -1,56 +1,41 @@
 // control of game what I want my game to essentially do
 
-let gameState = {
-threeInARow: "You Win!",
-noneInARow: "Tie!",
-currentScore: 0,
-goalScore: 5,  
+const gameState = {
+players: ['x', 'o'],
 
 }
 
-let nameDisplay = {
-    Player1: "Player One",
-    Player2: "Player Two",
-    playerComputer: "Computer"
-} 
+let currentPlayer = 'x'
+
+const board = document.querySelector('.board')
+board.addEventListener('click', function (event) {
+    console.log(event)
+    // .target.id
+    event.target.innerHTML= currentPlayer
+    if (currentPlayer === 'x') {
+        currentPlayer = 'o' 
+    } else if (currentPlayer === 'o') {
+        currentPlayer = 'x'  
+        }
+})
 
 
 
+// / functions that I will need to help my game do items expressed above
+function myFunction() {
+    let x = document.getElementById("myText").value;
+    document.getElementById("demo").innerHTML = x;
+  }
+    myFunction ()
 
-function scoreIncrease () {
-    gameState.currentScore++
-    scoreIncrease ()
+function myFunctionTwo() {
+    let x = document.getElementById("myTextTwo").value;
+    document.getElementById("demoTwo").innerHTML = x; 
+ }
+        myFunctionTwo ()
 
+function restartFunction () {
+    location.reload();
 }
 
 
-console.log ({gameState})
-
-
-
-
-
-
-function togglePlayer () {
-    nameDisplay.Player1
-} 
-
-
-
-
-
-
-
-// functions that I will need to help my game do items expressed above
-
-
-
-
-
-
-
-
-
-
-
-// getting my control items and functions to interact together

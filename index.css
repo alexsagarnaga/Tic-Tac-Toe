@@ -26,23 +26,29 @@ h1{
 }
 
 .board {
-    display: flex;
-    height: 360px;
-    width: 360px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 375px;
+    width: 375px;
     flex-wrap: wrap;
     margin-top: -18rem;
     margin-left: 35rem;
     box-shadow: 1rem 1rem  #FED9B7;
     background-color: #0081A7;
-    padding-left: 2rem;
+    font-size: 5rem;
+    font-family: 'Indie Flower', cursive;
+    color:#FED9B7;       
+        
 
    
 }
 .cell {
     display: flex;
-    flex-basis: 100px;
     align-items: center;
     justify-content: center;
+    width: 120px;
+    height: 120px;
+
 
 }
 
@@ -59,11 +65,22 @@ h1{
 
 .players {
     display: flex;
-    outline: solid  #0081A7;
+    outline: solid .5rem  #0081A7;
+    border-radius: .5rem;
     flex-direction: column;
     width: 13rem;
     background-color: #FED9B7;
     padding-left: 2rem;
     margin-top: 20rem;
     margin-left: 5rem;
+    font-family: 'Indie Flower', cursive;
+    color: red;
+    font-weight: bolder;
+    padding-right: 2rem;
+}
+
+h3 {
+    font-family: 'Indie Flower', cursive;
+    color: #F07167;
+    font-weight:bolder;
 }
