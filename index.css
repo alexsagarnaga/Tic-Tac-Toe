@@ -1,86 +1,102 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
 
 body {
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content:left; */
-    background-color:#00AFB9;
-    position: absolute; 
-  
-    
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content:left; */
+  background-color: #00afb9;
+  position: absolute;
+  margin-top: -150px;
+  padding-bottom: 75px;
 }
-header{
-        top:0px;;
-        position: fixed;
-        background-color:#0081A7 ;
-        width:95rem; 
-        box-shadow: 1rem 1rem #F07167;       
-    }
-h1{
-    text-align: center ;
-    font-size: 5rem;
-    margin: auto;
-    color: #FDFCDC;
-    font-family: 'Indie Flower', cursive;
-   
+header {
+  top: 0px;
+  position: fixed;
+  background-color: #0081a7;
+  width: 95rem;
+  box-shadow: 1rem 1rem #f07167;
+}
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin: auto;
+  color: #fdfcdc;
+  font-family: "Indie Flower", cursive;
 }
 
 .board {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    height: 375px;
-    width: 375px;
-    flex-wrap: wrap;
-    margin-top: -18rem;
-    margin-left: 35rem;
-    box-shadow: 1rem 1rem  #FED9B7;
-    background-color: #0081A7;
-    font-size: 5rem;
-    font-family: 'Indie Flower', cursive;
-    color:#FED9B7;       
-        
-
-   
+  display: grid;
+  grid-template-columns: auto auto auto;
+  height: 375px;
+  width: 375px;
+  flex-wrap: wrap;
+  margin-top: -18rem;
+  margin-left: 35rem;
+  box-shadow: 1rem 1rem #fed9b7;
+  background-color: #0081a7;
+  font-size: 5rem;
+  font-family: "Indie Flower", cursive;
+  color: #fed9b7;
 }
 .cell {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 120px;
-    height: 120px;
-
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
 }
 
-.board >.cell:nth-child(3n+2) {
-    border-right: .5vw solid #F07167;
-    border-left: .5vw solid #F07167;
-
+.board > .cell:nth-child(3n + 2) {
+  border-right: 0.5vw solid #f07167;
+  border-left: 0.5vw solid #f07167;
 }
 
-.board >.cell:nth-child(n+4):nth-child(-n+6) {
-    border-top: .5vw solid #F07167;
-    border-bottom: .5vw solid#F07167;
+.board > .cell:nth-child(n + 4):nth-child(-n + 6) {
+  border-top: 0.5vw solid #f07167;
+  border-bottom: 0.5vw solid#F07167;
 }
 
 .players {
-    display: flex;
-    outline: solid .5rem  #0081A7;
-    border-radius: .5rem;
-    flex-direction: column;
-    width: 13rem;
-    background-color: #FED9B7;
-    padding-left: 2rem;
-    margin-top: 20rem;
-    margin-left: 5rem;
-    font-family: 'Indie Flower', cursive;
-    color: red;
-    font-weight: bolder;
-    padding-right: 2rem;
+  display: flex;
+  outline: solid 0.5rem #0081a7;
+  border-radius: 0.5rem;
+  flex-direction: column;
+  width: 13rem;
+  background-color: #fed9b7;
+  padding-left: 2rem;
+  margin-top: 20rem;
+  margin-left: 5rem;
+  font-family: "Indie Flower", cursive;
+  color: red;
+  padding-right: 2rem;
+}
+
+#p1Input {
+  width: 13rem;
+}
+
+#p2Input {
+  width: 13rem;
+}
+
+#demo {
+  color: blue;
+  font-family: "Times New Roman", Times, serif;
+  font-size: larger;
+  text-align: center;
+  font-weight: bolder;
+}
+
+#demoTwo {
+  color: purple;
+  font-family: "Times New Roman", Times, serif;
+  font-size: larger;
+  text-align: center;
+  font-weight: bolder;
 }
 
 h3 {
-    font-family: 'Indie Flower', cursive;
-    color: #F07167;
-    font-weight:bolder;
+  font-family: "Indie Flower", cursive;
+  color: #f07167;
+  font-weight: bolder;
 }

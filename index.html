@@ -1,56 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
     <script defer src="index.js"></script>
     <title>Arcade Game: Tic-Tac-Toe</title>
-</head>
-<header>
-    <h1> Tic * Tac * Toe</h1>
-</header>
+  </head>
+  <header>
+    <h1>The Mighty Tic * Tac * Toe</h1>
+  </header>
 
-<body>
-
+  <body>
     <div class="players">
-        <h3>Game Mode</h3>
-      <p> Player 1 <input type="text" id="myText" name="fname" value="Enter Your Name" /><br /></p>
-      <button onclick="myFunction()">Player One </button>
+      <h3>Game Mode</h3>
+      <p>
+        Player 1
+        <input
+          id="p1Input"
+          type="text"
+          name="fname"
+          placeholder="Enter Name & Click Button Below"
+        /><br />
+      </p>
+      <button onclick="myFunction()">Player One</button>
       <p id="demo"></p>
-     
-      <p> Player 2 <input type="text" id="myTextTwo" name="fname" value="Enter Your Name" /><br /></p>
-      <button onclick="myFunctionTwo()">Player Two </button>
+
+      <p>
+        Player 2
+        <input
+          id="p2Input"
+          type="text"
+          name="fname"
+          placeholder="Enter Name & Click Button Below"
+        /><br />
+      </p>
+      <button onclick="myFunctionTwo()">Player Two</button>
       <p id="demoTwo"></p>
 
-      <button onclick="restartFunction()"> Restart The Game! </button>
+      <button onclick="restartFunction()">Restart The Game!</button>
 
-      <p id="turnIsIt"> </p>
-      <!-- <p id="Comp"> Computer</p> -->
-      
-
-      
+      <p id="turnIsIt"></p>
     </div>
 
-    <!-- <div class="restart"> -->
-        <!-- <button onclick="restart()" value="Restart"> Restart The Game</button> -->
-    <!-- </div> -->
-
-
     <div class="board">
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-        <div class="cell"></div>
-      
-      </div> 
-
-    
-</body>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+      <div class="cell"></div>
+    </div>
+  </body>
 </html>
